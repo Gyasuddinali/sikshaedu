@@ -1,0 +1,15 @@
+[
+    {
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces."
+    },
+    {
+      "question": "How do I use React?",
+      "answer": "You can use React by creating components and rendering them to the DOM."
+    },
+    {
+      "question": "What is JSX?",
+      "answer": "JSX is a syntax extension for JavaScript, allowing you to write HTML-like code in React."
+    }
+  ]
+  
