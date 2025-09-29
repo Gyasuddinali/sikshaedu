@@ -1,0 +1,58 @@
+.whychoose-section {
+  background-color: #f4fdfc;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0b3d2e;
+}
+
+.section-title span {
+  background: linear-gradient(90deg, #0b3d2e, #0d5e44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border-left: 4px solid #0b3d2e;
+}
+
+.feature-card:hover {
+  background-color: #e9f8f7;
+  transform: translateY(-5px);
+}
+
+.check-icon {
+  color: #0b3d2e;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.list-group-item {
+  background-color: transparent;
+  font-size: 1rem;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+/* Responsive fixes */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}

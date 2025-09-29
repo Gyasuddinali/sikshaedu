@@ -1,0 +1,92 @@
+/* Highlights.css */
+
+.highlights-section {
+  background: #fff;
+  color: #333;
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.highlights-section .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.highlights-section h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.75rem;
+  margin-bottom: 3rem;
+  color: #0b3d2e;
+  letter-spacing: 1.2px;
+}
+
+.highlights-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.highlights-section .col {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 1.8rem 2rem;
+  flex: 1 1 280px;
+  max-width: 320px;
+  color: #0b3d2e;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  border: 1px solid #e0e0e0;
+}
+
+.highlights-section .col:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background: #e6f2f1;
+  color: #054d44;
+}
+
+.highlights-section .icon {
+  background: #0b3d2e;
+  color: #fff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.highlights-section #p1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .highlights-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .highlights-section .row {
+    justify-content: center;
+  }
+
+  .highlights-section .col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}

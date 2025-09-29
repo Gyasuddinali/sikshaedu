@@ -1,0 +1,99 @@
+/* Default: mobile floating style */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.fab {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  gap: 8px;
+}
+
+.fab .label {
+  display: none;
+}
+
+.fab-whatsapp {
+  background-color: #25D366;
+}
+
+.fab-call {
+  background-color: #007bff;
+}
+
+/* 💻 Desktop: full-width connected button group */
+@media (min-width: 768px) {
+  .floating-buttons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: #fff; /* added white background */
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.15); /* added shadow */
+    z-index: 9999;
+  }
+
+  .fab {
+    border-radius: 0;
+    height: 100%;
+    flex: 1;
+    width: auto;
+    font-size: 18px;
+    justify-content: center;
+    border: none;
+  }
+
+  .fab .label {
+    display: inline;
+    font-weight: 500;
+  }
+
+  .fab:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .fab:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .fab + .fab {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+.fab-label {
+  display: none;
+}
+
+/* Show label only on desktop */
+@media (min-width: 768px) {
+  .fab-label {
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 500;
+  }
+}
+

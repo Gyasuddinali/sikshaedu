@@ -5,13 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SearchProvider } from './context/SearchContext';
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <SearchProvider>
+<BrowserRouter>
     <App />
-  </SearchProvider>
+  </BrowserRouter>
+
+
+  // <SearchProvider>
+  //   <App />
+  // </SearchProvider>
+
+
+
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>

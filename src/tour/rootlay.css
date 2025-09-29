@@ -1,0 +1,206 @@
+/* root.css */
+
+/* Global Reset + Smooth Scroll */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding-top: 70px; /* adjust for fixed navbar */
+}
+
+/* Navbar Overrides */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+}
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 1rem;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80') center center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.45);
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+.hero-section h1,
+.hero-section h3 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+.hero-section .btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin-top: 8px;
+}
+
+/* About Section */
+.about-image-container {
+  position: relative;
+}
+.about-image-container .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.about-image-container:hover .image-overlay {
+  opacity: 1;
+}
+.overlay-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-content i {
+  color: #fff;
+}
+
+/* Explore Blocks */
+.explore-world .row {
+  margin-bottom: 4rem;
+}
+.explore-world img {
+  border-radius: .5rem;
+}
+.explore-world h3 {
+  font-size: 1.75rem;
+}
+.explore-world p {
+  font-size: 1rem;
+}
+
+/* Portfolio Gallery */
+.filter-btn {
+  margin: 0 .25rem;
+  padding: .5rem 1rem;
+  transition: 0.3s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.portfolio-item img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Service Cards */
+.service-card {
+  padding: 1.5rem;
+  border-radius: .5rem;
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.service-icon {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Testimonials */
+.testimonials-section .card {
+  border: none;
+  transition: transform 0.3s;
+}
+.testimonials-section .card:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-info {
+  margin-top: 1rem;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+.contact-item i {
+  font-size: 1.25rem;
+  margin-right: .5rem;
+  color: #007bff;
+}
+.contact-form input,
+.contact-form textarea {
+  border-radius: .25rem;
+}
+.contact-form .btn {
+  border-radius: .25rem;
+}
+
+/* Footer */
+.footer-section {
+  background: #f8f9fa;
+}
+.footer-section p {
+  margin-bottom: .5rem;
+}
+.footer-section .social-links a {
+  color: #007bff;
+  margin: 0 .5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+.footer-section .social-links a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+  .hero-section {
+    height: 70vh;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}

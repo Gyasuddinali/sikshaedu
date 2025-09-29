@@ -1,0 +1,22 @@
+/* Container for custom pagination */
+.custom-pagination {
+  display: flex;
+  gap: 10px;
+}
+
+/* Each bullet is a round thumbnail */
+.custom-pagination .custom-bullet {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* Highlight active bullet */
+.custom-pagination .swiper-pagination-bullet-active {
+  border-color: #0b3d2e; /* your brand color */
+}

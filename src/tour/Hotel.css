@@ -1,0 +1,33 @@
+.hotel-feature-section {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.image-left {
+  overflow: hidden;
+}
+
+.full-height-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  min-height: 500px;
+}
+
+.content-right {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
