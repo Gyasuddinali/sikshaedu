@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function MountainRom() {
+function DestinationIind() {
   return (
-    <div className="container py-5" id="almora">
+    <div className="container py-5">
       {/* Title */}
       <div className="text-center mb-4" data-aos="fade-up">
         <h1 className="display-5 fw-bold text-primary">
@@ -57,4 +57,4 @@ function MountainRom() {
   );
 }
 
-export default MountainRom;
+export default DestinationIind;
