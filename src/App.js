@@ -106,7 +106,7 @@ import MountainRom from './tour/MountainRom'
 import Himalaya from './tour/Himalay'
 
 import {BrowserRouter, Routes, Route } from "react-router-dom"; 
-import NavBar from './tour/NavBar';
+// import NavBar from './tour/NavBar';
 import Service from './components/ServicesPage'
 import TwoImage from './tour/TwoImage';
 import ServiceNew from './tour/ServiceNew.js'
