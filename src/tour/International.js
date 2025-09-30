@@ -2,7 +2,7 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function AboutSection() {
+function International() {
   return (
     <div className="container py-5" id="uttranchal">
       <div className="text-center mb-4" data-aos="fade-up">
@@ -57,4 +57,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default International;

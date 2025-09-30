@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaChevronDown, FaBars, FaTimes, FaHome, FaGlobe, FaCode, FaPhone } from "react-icons/fa";
 import { HiLocationMarker } from 'react-icons/hi';
-// import './servicenew1.css';
 import './nav.css';
 export default function NavBar() {
   const [activeDropdown, setActiveDropdown] = useState(null);

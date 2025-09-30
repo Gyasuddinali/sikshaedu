@@ -1,7 +1,7 @@
 
 
-import MountainRom from './tour/MountainRom'
-import Himalaya from './tour/Himalay'
+import DestinationIind from './tour/DestinationIind.js'
+import International from './tour/International.js'
 
 import {BrowserRouter, Routes, Route } from "react-router-dom"; 
 import NavBar from './tour/NavBar';
@@ -31,11 +31,10 @@ function App() {
   return (
 <div >
     <NavBar></NavBar>
-
  <Hero/>
 <Service/>
-<MountainRom/>
-<Himalaya/>
+<DestinationIind/>
+<International/>
 <TwoImage/>
 <TwosideContent/>
 <Gallery/>

@@ -5,12 +5,17 @@
   right: 30px;
   z-index: 1000;
 }
+body{
+    /* background: #5a6cbb42; */
+background: #ebf8f8;
 
+}
 /* Main FAB */
 .fab-main {
   width: 60px;
   height: 60px;
-  background: #1e1e1e;
+  background: linear-gradient(135deg, #03dab6, #7102e0);
+
   color: #fff;
   border: none;
   border-radius: 50%;

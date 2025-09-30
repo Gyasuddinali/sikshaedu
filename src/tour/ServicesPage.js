@@ -35,7 +35,7 @@ export default function ServicesPage() {
   }, []);
 
   return (
-    <div className="services-wrapper py-5 bg-light">
+    <div className="services-wrapper py-5 ">
       {/* Hero Section */}
       <section className="text-center mb-5" data-aos="fade-up">
         <h1 className="display-5 fw-bold text-primary">Our Services</h1>
