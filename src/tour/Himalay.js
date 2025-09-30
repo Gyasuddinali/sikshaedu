@@ -1,12 +1,10 @@
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../components/WebDevService.css'; // Custom styles if needed
 
 function AboutSection() {
   return (
     <div className="container py-5" id="uttranchal">
-      {/* Title Section */}
       <div className="text-center mb-4" data-aos="fade-up">
         <h1 className="display-5 fw-bold text-success">
           Popular International Destinations
@@ -17,9 +15,7 @@ function AboutSection() {
         </p>
       </div>
 
-      {/* Image Grid */}
       <div className="row g-4 align-items-stretch">
-        {/* Left: Large Feature Image */}
         <div className="col-lg-6" data-aos="fade-right">
           <div className="shadow-sm rounded overflow-hidden h-100">
             <img
@@ -31,7 +27,6 @@ function AboutSection() {
           </div>
         </div>
 
-        {/* Right: Two Smaller Images */}
         <div className="col-lg-6 d-flex flex-column gap-4">
           <div className="shadow-sm rounded overflow-hidden" data-aos="zoom-in">
             <img
@@ -53,7 +48,6 @@ function AboutSection() {
         </div>
       </div>
 
-      {/* CTA Button */}
       <div className="text-center mt-5" data-aos="fade-up">
         <a href="#all-destinations" className="btn btn-outline-success btn-lg px-4">
           View All Destinations
